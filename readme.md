@@ -8,7 +8,7 @@ Using a combination of PHP, MySql and vanilla Javascript; Query your new databas
 
 Your UI should look something like this
 
-![Preview Image](https://github.com/Crystal-D/code_test/codetest_ui.png)
+![Preview Image](https://github.com/Crystal-D/code_test/blob/main/codetest_ui.png)
 
 The following points should be taken into account
 

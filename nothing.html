@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<table>
+    <tr>
+        <th class="sort">Name</th>
+        <th>Height</th>
+        <th>Date of Birth</th>
+        <th>Hobby</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td>Bob Singleton</td>
+        <td>5'8"</td>
+        <td>6/23/1993</td>
+        <td>Animal Fostering</td>
+        <td><button>Change Hobby</button></td>
+    </tr>
+    <tr>
+        <td>Jane Smith</td>
+        <td>5'4"</td>
+        <td>6/20/1984</td>
+        <td>Baking</td>
+        <td><button>Change Hobby</button></td>
+    </tr>
+    <tr>
+        <td>John Smith</td>
+        <td>6'2"</td>
+        <td>10/19/1980</td>
+        <td>Racing</td>
+        <td><button>Change Hobby</button></td>
+    </tr>
+    <tr>
+        <td>Walter Taylor</td>
+        <td>6'1"</td>
+        <td>11/29/1997</td>
+        <td>Sports</td>
+        <td><button>Change Hobby</button></td>
+    </tr>
+</table>
+<style>
+    table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+th.sort {
+    cursor: pointer;
+}
+th.sort::before {
+    content: "";
+    display: inline-block;
+    margin-right: 5px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #000;
+    transform: rotate(90deg);
+    transition: transform .2s;
+}
+
+td button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #3e8e41;
+}
+
+</style>

@@ -5,6 +5,7 @@ To get started:
 
 1. Clone this repository
 2. Using the provided codetest.sql file, create a new MySql database.
+4. Follow the description below and complete the assignment.
 3. Create your own repository and upload the project.
 
 ### Description

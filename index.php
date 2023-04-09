@@ -1,144 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+    
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crystal D Code Test</title>
-        <script src="script.js"></script> 
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script src="scriptButon.js"></script> 
         
-        <style>
-            table {
-            border-collapse: collapse;
-            border-spacing: 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            }
-
-            th, td {
-            text-align: left;
-            padding: 16px;
-            }
-
-            tr:nth-child(even) {
-            background-color: #f2f2f2;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
 
     </head>
-        <body>
-            <?php
-            //Import external php file to use reusable code.
+
+        <?php 
+
+            // Import external php file to use reusable code.
             require "api.php";
 
             // Call reusable mysqli connect code from external file.
             $mysqli = mysqliConnect();
 
-            //Instantiate the action variable.
-            $action = '';    
-            
-            $sql =  
-
-            //Instantiate the variable.
-            $where = '';
-
-            //Check to see if we have an ID.
-            if(isset($_GET["id"]))
-            {
-            
-                $id     = $_GET["id"];      //geting id value which we are passing from table headers
-                $action = $_GET["action"];  //geting action value which we are passing from table headers
-                
-                //We are checking condition if $action value is ASC then $action will set to DESC otherwise it will remain ASC
-                if($action == 'ASC')
-                { 
-                    $action='DESC';
-                }
-                else  
-                { 
-                    $action='ASC';
-                }
-                if($_GET['id']=='name') 
-                {
-                    $id = "name";
-                }
-                elseif($_GET['id']=='height') 
-                {
-                    $id = "height";
-                }
-                elseif($_GET['id']=='dob') 
-                {
-                    $id="dob";
-                }
-                elseif($_GET['id']=='hobbies_name') 
-                {
-                    $id="hobbies_name";
-                }
-
-                $where = " ORDER BY  $id $action ";
-
-                //SQL query to get certain data from database.
-                $sql = "SELECT * from people INNER JOIN person_interest ON people.id = person_interest.person_id 
-                                             INNER JOIN hobby_interest ON person_interest.interest_id = hobby_interest.interest_id 
-                                             INNER JOIN hobbies ON hobbies.id WHERE hobby_id = hobbies.id" . $where;
-            }
-        
         ?>
-        <html>
+
         <body>
-            <!-- Create table with headings to store information from database. --> 
-            <table border="1">
-                <tr>
-                <th><a href="index.php?id=<?php echo 'name';?>&action=<?php echo $action;?>">Name</a></th>
-                <th><a href="index.php?id=<?php echo 'height';?>&action=<?php echo $action;?>">Height</a></th>
-                <th><a href="index.php?id=<?php echo 'dob';?>&action=<?php echo $action;?>">Date of Birth</a></th>
-                <th><a href="index.php?id=<?php echo 'hobbies_name';?>&action=<?php echo $action;?>">Hobbies</a></th>
-            </tr>
             
         <?php
+
+        // Query database for list of people and their hobbies, sorted by the selected column
+
+        $sql = sqlQuery();
+
+        // Save the query results in to result variable
         $result = $mysqli->query($sql);
-        if ($result->num_rows > 0) { 
 
-/*
-        // Fetch a result row as an associative array
-            while($row = $result->fetch_assoc()) { ?>
-
-                <tr>
-                    <td> <?php echo $row['name'];           ?> </td>
-                    <td> <?php echo $row['height'];         ?> </td>
-                    <td> <?php echo $row['dob'];            ?> </td>
-                    <td> <?php echo $row['hobbies_name'];   ?> </td>
-                    <td> <?php echo "<button id='changeButton' onClick='changeHobby()'>Change Hobby</button>";?> </td>
-                </tr>
-  */              
-            $hold = '';
-             while($row = $result->fetch_assoc()) { 
-
-               echo "<tr>";
-               if ($hold != $row['name']) {
-                    echo "<td>" . $row['name']           . "</td>";
-                    echo "<td>" . $row['height']         . "</td>";
-                    echo "<td>" . $row['dob']            . "</td>";
-                    echo "<td>" . $row['hobbies_name']   . "</td>";
-                    echo "<td>" . "<button id='changeButton' onClick='changeHobby()'>Change Hobby</button>" . "</td>";
-               echo "</tr>";
-                    $hold = $row['name'];
-                }
-             }
-        ?>
-
-        <?php 
-                
+        // Check to make sure result variable is not empty
+        if ($result->num_rows > 0) {
             
-                echo '</table>';
-                echo '</div>';
-            } 
-            else 
-            {
-            echo "0 results";
+            // Instantiate the $rows array variable
+            $rows = array();
+
+            // Loop throught the associated array
+            while($row = $result->fetch_assoc()) {
+                //Save associated $row array to the $rows array variable
+                $rows[] = $row;
             }
+
+            // Passes and stores $rows array into json file
+            $json = json_encode($rows, JSON_PRETTY_PRINT);
+            file_put_contents('data.json', $json);
+
+            // Read the JSON file contents
+            $json_data = file_get_contents('data.json');
+
+            // Decode the JSON data
+            $data = json_decode($json_data, true);
+
+            // Sort the data based on the selected column and order
+            $sort = isset($_GET['sort']) ? $_GET['sort'] : '';
+            $order = isset($_GET['order']) ? $_GET['order'] : 'ASC';
+
+            if ($sort) {
+                usort($data, function($a, $b) use ($sort, $order) {
+                    return ($order == 'ASC') ? strcmp($a[$sort], $b[$sort]) : strcmp($b[$sort], $a[$sort]);
+                });
+            } 
+
+            // Generate the HTML table heders
+            echo '<table>';
+
+                echo '<thead>';
+                    echo '<tr>';
+                        echo '<th><a href="?sort=name&order=' . ($sort == 'name' && $order == 'ASC' ? 'DESC' : 'ASC') . '">Name</a></th>';
+                        echo '<th><a href="?sort=height&order=' . ($sort == 'height' && $order == 'ASC' ? 'DESC' : 'ASC') . '">Height</a></th>';
+                        echo '<th><a href="?sort=dob&order=' . ($sort == 'dob' && $order == 'ASC' ? 'DESC' : 'ASC') . '">Date of Birth</a></th>';
+                        echo '<th><a href="?sort=hobby&order=' . ($sort == 'hobby' && $order == 'ASC' ? 'DESC' : 'ASC') . '">Hobby</a></th>';
+                    echo '</tr>';
+                echo '</thead>';
                 
+                // Generate the HTML table rows
+                echo '<tbody>';
+                    foreach ($data as $row) {
+                        echo '<tr>';
+                        echo '<td>' . $row['name'] . '</td>';
+                        echo '<td>' . $row['height'] . '</td>';
+                        echo '<td>' . $row['dob'] . '</td>';
+                        echo '<td class="hobby">' . explode(', ', $row['hobby'])[0] . '</td>'; // display the first value in the hobby array
+                        echo '<td><button class="change-btn">Change Hobby</button></td>'; 
+                        echo '</tr>';
+                    }
+                echo '</tbody>';
+
+            echo '</table>';
+
+        } 
+        
+        else 
+            {
+                echo "0 results";
+            }
+
+        echo '</table>';
+
         $mysqli->close();
         ?>
+
     </body>
 </html>

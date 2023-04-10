@@ -29,4 +29,10 @@
             // Decode the JSON data
             $data = json_decode($json_data, true);
 
+            foreach ($data as $row) {
+
+                echo '<td class="hobby">' . explode(', ', $row['hobby'])[0] . '</td>'; // display the first value in the hobby array
+
+            }
+
 ?>

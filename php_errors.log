@@ -1,0 +1,175 @@
+[11-Apr-2023 01:17:21 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 12
+[11-Apr-2023 01:17:21 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 12
+[11-Apr-2023 01:17:21 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 12
+[11-Apr-2023 01:17:21 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 12
+[11-Apr-2023 01:19:01 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\code_test\updateHobby.php:14
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Undefined variable $hobby in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Undefined variable $hobby in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Undefined variable $hobby in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Undefined variable $hobby in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:20:23 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:28:31 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:94
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(94): explode(', ', Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 94
+[11-Apr-2023 01:29:46 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:94
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(94): explode(', ', Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 94
+[11-Apr-2023 01:29:47 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:94
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(94): explode(', ', Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 94
+[11-Apr-2023 01:29:47 UTC] PHP Fatal error:  Uncaught TypeError: explode(): Argument #2 ($string) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:94
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(94): explode(', ', Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 94
+[11-Apr-2023 01:33:12 UTC] PHP Warning:  Attempt to read property "hobby" on array in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 01:33:12 UTC] PHP Fatal error:  Uncaught TypeError: array_rand(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\code_test\updateHobby.php:14
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(14): array_rand(NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 01:48:28 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:48:28 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:48:28 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:48:28 UTC] PHP Warning:  Array to string conversion in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Undefined variable $goup9 in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Undefined variable $goup9 in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Undefined variable $goup9 in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Undefined variable $goup9 in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:49:22 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\code_test\updateHobby.php on line 13
+[11-Apr-2023 01:52:13 UTC] PHP Parse error:  syntax error, unexpected variable "$random_hobby" in C:\xampp\htdocs\code_test\updateHobby.php on line 16
+[11-Apr-2023 01:54:00 UTC] PHP Parse error:  syntax error, unexpected token "." in C:\xampp\htdocs\code_test\updateHobby.php on line 16
+[11-Apr-2023 01:54:59 UTC] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 01:54:59 UTC] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 01:59:33 UTC] PHP Warning:  Undefined variable $counter in C:\xampp\htdocs\code_test\index.php on line 95
+[11-Apr-2023 01:59:33 UTC] PHP Warning:  Undefined variable $counter in C:\xampp\htdocs\code_test\index.php on line 96
+[11-Apr-2023 02:05:10 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:05:12 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:05:18 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:05:49 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:09:20 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:09:24 UTC] PHP Fatal error:  Uncaught TypeError: strcmp(): Argument #1 ($string1) must be of type string, array given in C:\xampp\htdocs\code_test\index.php:71
+Stack trace:
+#0 C:\xampp\htdocs\code_test\index.php(71): strcmp(Array, Array)
+#1 [internal function]: {closure}(Array, Array)
+#2 C:\xampp\htdocs\code_test\index.php(70): usort(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\index.php on line 71
+[11-Apr-2023 02:15:39 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:15:42 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:15:42 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:15:42 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:15:43 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:17:42 UTC] PHP Warning:  Undefined array key "group" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:25:19 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:25:19 UTC] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 02:25:19 UTC] PHP Warning:  Undefined variable $group in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:25:19 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:29:56 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:29:56 UTC] PHP Warning:  Undefined variable $name in C:\xampp\htdocs\code_test\updateHobby.php on line 14
+[11-Apr-2023 02:29:56 UTC] PHP Warning:  Undefined variable $group in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:29:56 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:31:21 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:31:21 UTC] PHP Warning:  Undefined variable $group in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:31:21 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:31:24 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:31:24 UTC] PHP Warning:  Undefined variable $group in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:31:24 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:32:22 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:32:22 UTC] PHP Warning:  Undefined variable $namge in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:32:22 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:32:35 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:32:35 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:15
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(15): in_array(NULL, 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(14): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 15
+[11-Apr-2023 02:34:48 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\code_test\updateHobby.php on line 5
+[11-Apr-2023 02:37:25 UTC] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in C:\xampp\htdocs\code_test\updateHobby.php:16
+Stack trace:
+#0 C:\xampp\htdocs\code_test\updateHobby.php(16): in_array('John Smith', 'John Smith')
+#1 [internal function]: {closure}(Array)
+#2 C:\xampp\htdocs\code_test\updateHobby.php(15): array_filter(Array, Object(Closure))
+#3 {main}
+  thrown in C:\xampp\htdocs\code_test\updateHobby.php on line 16

@@ -4,27 +4,41 @@
         "height": "6'2\"",
         "dob": "1980-10-19",
         "interests": "baseball, cats, computers",
-        "hobby": "Gaming, Sports, Animal Fostering"
+        "hobby": [
+            "Sports",
+            "Gaming",
+            "Animal Fostering"
+        ]
     },
     {
         "name": "Jane Smith",
         "height": "5'4\"",
         "dob": "1984-06-20",
         "interests": "computers, games, novels",
-        "hobby": "Reading, Gaming"
+        "hobby": [
+            "Gaming",
+            "Reading"
+        ]
     },
     {
         "name": "Bob Singleton",
         "height": "5'8\"",
         "dob": "1993-06-23",
         "interests": "cars, dogs, games",
-        "hobby": "Racing, Animal Fostering, Gaming"
+        "hobby": [
+            "Gaming",
+            "Racing",
+            "Animal Fostering"
+        ]
     },
     {
         "name": "Walter Taylor",
         "height": "6'1\"",
         "dob": "1997-11-29",
         "interests": "cakes, cats, cooking",
-        "hobby": "Baking, Animal Fostering"
+        "hobby": [
+            "Baking",
+            "Animal Fostering"
+        ]
     }
 ]

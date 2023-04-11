@@ -43,6 +43,11 @@
 
             // Loop throught the associated array
             while($row = $result->fetch_assoc()) {
+                
+                // Explode the hobbies string into an array
+                $hobbies_array = explode(', ', $row['hobby']);
+                $row['hobby'] = $hobbies_array;
+                
                 //Save associated $row array to the $rows array variable
                 $rows[] = $row;
             }
@@ -63,7 +68,7 @@
 
             if ($sort) {
                 usort($data, function($a, $b) use ($sort, $order) {
-                    return ($order == 'ASC') ? strcmp($a[$sort], $b[$sort]) : strcmp($b[$sort], $a[$sort]);
+                    return ($order == 'ASC') ? strcmp($a[$sort][0], $b[$sort][0]) : strcmp($b[$sort][0], $a[$sort][0]);
                 });
             } 
 
@@ -81,13 +86,14 @@
                 
                 // Generate the HTML table rows
                 echo '<tbody>';
+                //Instantiate the counter
                     foreach ($data as $row) {
                         echo '<tr>';
                         echo '<td>' . $row['name'] . '</td>';
                         echo '<td>' . $row['height'] . '</td>';
                         echo '<td>' . $row['dob'] . '</td>';
-                        echo '<td class="hobby">' . explode(', ', $row['hobby'])[0] . '</td>'; // display the first value in the hobby array
-                        echo '<td><button class="change-btn">Change Hobby</button></td>'; 
+                        echo '<td class="hobby">' . explode(', ', $row['hobby'][0])[0] . '</td>';
+                        echo '<td><button class="change-btn" data-name="' . $row['name'] . '">Change Hobby</button></td>';
                         echo '</tr>';
                     }
                 echo '</tbody>';
